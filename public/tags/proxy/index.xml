@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proxy on LOOK</title><link>https://blog.961121.xyz/tags/proxy/</link><description>Recent content in Proxy on LOOK</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>a2830789772@gmail.com (LOOK)</managingEditor><webMaster>a2830789772@gmail.com (LOOK)</webMaster><copyright>© 2026 LOOK</copyright><lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.961121.xyz/tags/proxy/index.xml" rel="self" type="application/rss+xml"/><item><title>打造完美的网络分流体验：订阅转换与自定义规则指南</title><link>https://blog.961121.xyz/posts/subscription-conversion-custom-rules/</link><pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate><author>a2830789772@gmail.com (LOOK)</author><guid>https://blog.961121.xyz/posts/subscription-conversion-custom-rules/</guid><description>&lt;p&gt;在日常使用代理软件（如 Clash、Surge、Sing-box）时，机场提供的默认订阅往往存在规则臃肿、分流不准确或不符合个人使用习惯的问题。&lt;/p&gt;
+&lt;p&gt;为了解决这个问题，&lt;strong&gt;订阅转换&lt;/strong&gt;（Subscription Converter）成为了一个必备技能。通过它，我们可以将原始的订阅链接转换为适配各种客户端的格式，并挂载我们自己喜欢的&lt;strong&gt;分流规则&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;本文将手把手教你如何使用在线工具，加载我维护的&lt;strong&gt;个人自用配置（CustomRules）&lt;/strong&gt;，并带你&lt;strong&gt;看懂&lt;/strong&gt;转换后的策略组，彻底告别“节点连不上”的困惑。&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;🛠️ 工具准备
+ &lt;div id="-工具准备" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-%e5%b7%a5%e5%85%b7%e5%87%86%e5%a4%87" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;我们需要用到以下两个核心资源：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;在线订阅转换工具&lt;/strong&gt;：&lt;/p&gt;
+&lt;a
+ class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+ href="https://acl4ssr-sub.github.io/"
+ target="_blank"
+ 
+ role="button"&gt;
+ 
+ 🚀 打开 ACL4SSR 在线转换
+ 
+&lt;/a&gt;
+
+&lt;p&gt;&lt;em&gt;说明：这是一个基于 Subconverter 搭建的前端页面，界面简洁，支持多种主流客户端格式输出。&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;个人自用 专属规则（Remote Config）&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;规则地址&lt;/strong&gt;（点击右侧复制按钮）：
+&lt;div class="highlight-wrapper"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;https://raw.githubusercontent.com/WebTeen/ssr-rules/refs/heads/main/CustomRules.ini&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;说明：这是我根据日常开发和使用习惯优化的规则集，包含精细化的去广告、国内直连优化及流媒体分流策略。&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+ 
+ 
+ 
+ 
+
+
+
+&lt;div
+ 
+ class="flex px-4 py-3 rounded-md shadow bg-primary-100 dark:bg-primary-900"
+ 
+ &gt;
+ &lt;span
+ 
+ class="text-primary-400 pe-3 flex items-center"
+ 
+ &gt;
+ 
+ &lt;/span&gt;
+
+ &lt;span
+ 
+ class="dark:text-neutral-300"
+ 
+ &gt;&lt;p&gt;&lt;strong&gt;为什么要用“个人自用 自定义规则”？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;相比于机场自带的规则，这套配置有以下优势：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;净化环境&lt;/strong&gt;：内置了强力的广告拦截规则。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智能分流&lt;/strong&gt;：准确识别国内/国外流量，避免访问百度也走代理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开发友好&lt;/strong&gt;：针对 GitHub、StackOverflow 等开发者常用站进行了优化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+&lt;/div&gt;
+
+
+&lt;h2 class="relative group"&gt;🚀 基础教程：一键转换
+ &lt;div id="-基础教程一键转换" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-%e5%9f%ba%e7%a1%80%e6%95%99%e7%a8%8b%e4%b8%80%e9%94%ae%e8%bd%ac%e6%8d%a2" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+
+&lt;h3 class="relative group"&gt;第一步：填写基础信息
+ &lt;div id="第一步填写基础信息" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%b8%80%e6%ad%a5%e5%a1%ab%e5%86%99%e5%9f%ba%e7%a1%80%e4%bf%a1%e6%81%af" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 &lt;a href="https://acl4ssr-sub.github.io/" target="_blank" rel="noreferrer"&gt;ACL4SSR&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;在 &lt;strong&gt;“订阅链接”&lt;/strong&gt; 中粘贴你的机场订阅地址（支持多个链接用 &lt;code&gt;|&lt;/code&gt; 分隔，或直接换行）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;“后端地址”&lt;/strong&gt; 建议选择列表中的 &lt;strong&gt;自建后端&lt;/strong&gt; 或 &lt;code&gt;api.wcc.best&lt;/code&gt; 等高可用后端，以确保转换速度和稳定性。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 class="relative group"&gt;第二步：加载自定义规则（关键）
+ &lt;div id="第二步加载自定义规则关键" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e7%ac%ac%e4%ba%8c%e6%ad%a5%e5%8a%a0%e8%bd%bd%e8%87%aa%e5%ae%9a%e4%b9%89%e8%a7%84%e5%88%99%e5%85%b3%e9%94%ae" aria-label="锚点"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h3&gt;
+&lt;p&gt;在 &lt;strong&gt;“远程配置”&lt;/strong&gt; 下拉框中，选择 &lt;strong&gt;“Custom（自定义）”&lt;/strong&gt;，然后将上面准备好的 &lt;strong&gt;个人自用 规则地址&lt;/strong&gt; 粘贴进去。&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.961121.xyz/posts/subscription-conversion-custom-rules/cover.png"/></item></channel></rss>

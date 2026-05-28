@@ -1,0 +1,66 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+# -- Main Menu --
+# 顶部导航栏配置
+[[main]]
+  identifier = "posts"
+  name = "博客文章"  # 这里是菜单上显示的文字
+  pageRef = "posts"   # 对应 content/posts/ 目录
+  weight = 5       # 权重越大，排越后面。如果你想放在 AI 前面，就设为 5
+  
+  # Blowfish 主题特有的图标配置
+  [main.params]
+    icon = "file-lines"
+
+[[main]]
+  identifier = "ai"
+  name = "AI 实验室"   # 显示的文字
+  pageRef = "ai"      # 对应 content/ai 文件夹 (你的 Codex CLI 在这里)
+  weight = 10
+  
+  [main.params]
+    icon = "wand-magic-sparkles"
+
+[[main]]
+  identifier = "tags"
+  name = "标签"
+  pageRef = "tags"    # 自动生成的标签页
+  weight = 20
+
+  [main.params]
+    icon = "tag"
+
+[[main]]
+  identifier = "categories"
+  name = "分类"
+  pageRef = "categories"
+  weight = 30
+
+  [main.params]
+    icon = "list"
+
+
+# -- Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
+
+
+# [[footer]]
+#   name = "Tags"
+#   pageRef = "tags"
+#   weight = 10
+
+# [[footer]]
+#   name = "Categories"
+#   pageRef = "categories"
+#   weight = 20

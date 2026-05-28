@@ -1,0 +1,156 @@
+# -- Theme Options --
+# 完整配置文档: https://blowfish.page/docs/configuration/#theme-parameters
+
+colorScheme = "blowfish" # 主题配色，可选 blowfish, neon, noir 等
+defaultAppearance = "light" # 默认浅色，可选 light or dark
+autoSwitchAppearance = true # 跟随系统自动切换深色模式
+
+enableA11y = true
+enableSearch = true # 开启搜索
+enableCodeCopy = true # ✅ 开启代码块复制按钮 (开发者必备)
+enableStructuredBreadcrumbs = true
+# enableStyledScrollbar = true
+
+replyByEmail = false
+
+disableImageOptimization = false
+disableImageOptimizationMD = false
+disableTextInHeader = false
+
+# fingerprintAlgorithm = "sha512"
+
+# 你的 Gitea/Forgejo 地址 (如果不引用相关代码可忽略)
+#giteaDefaultServer = "https://git.fsfe.org"
+#forgejoDefaultServer = "https://v11.next.forgejo.org"
+
+[header]
+  layout = "fixed-fill-blur" # 顶部导航栏样式
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  # ✅ 核心修改：使用气泡动效背景
+  layout = "background" 
+  
+  # ✅ 请确保你的柴犬Logo文件名为 logo.png 并放在 static/img/ 目录下
+  # 如果你想用官方那个图，就改成 "img/background.svg"
+  homepageImage = "img/background.svg" 
+  
+  # ✅ 首页显示最近文章
+  showRecent = true 
+  showRecentItems = 5 # 显示 5 篇
+  
+  # ✅ 底部显示“更多”按钮
+  showMoreLink = true 
+  showMoreLinkDest = "posts" # 点击跳转到 content/posts
+  
+  cardView = false
+  cardViewScreenWidth = false
+  layoutBackgroundBlur = false 
+  disableHeroImageFilter = false 
+
+[article]
+  showDate = true
+  showViews = false
+  showLikes = false
+  showDateOnlyInArticle = false
+  showDateUpdated = false
+  showAuthor = true
+  showHero = false
+  layoutBackgroundBlur = true 
+  layoutBackgroundHeaderSpace = true 
+  showBreadcrumbs = true # ✅ 开启面包屑导航，方便在文档间跳转
+  showDraftLabel = true
+  showEdit = false
+  editAppendPath = true
+  seriesOpened = false
+  showHeadingAnchors = true # ✅ 标题旁显示锚点链接
+  
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  
+  # ✅ 开启目录 (对于长技术文档非常重要)
+  showTableOfContents = true 
+  
+  # ✅ 开启相关文章推荐
+  showRelatedContent = true 
+  relatedContentLimit = 3
+  
+  showTaxonomies = true 
+  showCategoryOnly = false 
+  showAuthorsBadges = false
+  showWordCount = true
+  showZenMode = false
+
+[list]
+  showHero = false
+  layoutBackgroundBlur = true 
+  layoutBackgroundHeaderSpace = true 
+  showBreadcrumbs = false
+  
+  # ✅ 列表页显示摘要，而不只是标题
+  showSummary = true 
+  
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  showCards = false
+  orderByWeight = false
+  groupByYear = true # 按年份分组显示
+  cardView = false
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
+
+[taxonomy]
+  showTermCount = true
+  showHero = false
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  cardView = false
+
+[term]
+  showHero = false
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = true
+  groupByYear = false
+  cardView = false
+  cardViewScreenWidth = false
+
+# 以下分析/评论/广告配置，暂时留空即可
+
+[firebase]
+  # apiKey = ""
+
+[fathomAnalytics]
+  # site = ""
+
+[umamiAnalytics]
+  # websiteid = ""
+
+[selineAnalytics]
+  # token = ""
+
+[buymeacoffee]
+  # identifier = ""
+
+[verification]
+  # google = ""
+
+[rssnext]
+  # feedId = ""
+
+[advertisement]
+  # adsense = ""
