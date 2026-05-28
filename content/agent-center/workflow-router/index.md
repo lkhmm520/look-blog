@@ -40,7 +40,7 @@ categories: ["AI 工程化"]
 | 共享 UI 组件、样式一致性、`@qmai/vue-kylin` 行为 | `vue-kylin-international` |
 | `vue-kylin-international` 版本升级、package 发布、打 tag、推送或部署 | `vue-kylin-international` |
 | UI / UX / 页面布局 / 设计 token / 后台页面视觉规范 | `international-design-technical-spec` |
-| 项目接入说明、目录结构分工、接口职责图、样式入口、组件库地址与依赖关系梳理 | `PROJECT_ONBOARDING.md` 后再进入最小 playbook |
+| 项目接入说明、目录结构分工、接口职责图、样式入口、组件库地址与依赖关系梳理 | [项目结构与组件库接入速查]({{< relref "/agent-center/project-onboarding/" >}}) 后再进入最小 playbook |
 | `pre` 发布、发布状态检查、OPMS 排障 | `shared-opms-release` |
 | 刷新 playbook 与真实仓库历史同步 | `PLAYBOOK_SYNC.md` |
 

@@ -34,7 +34,7 @@ categories: ["AI 工程化"]
 | `vue-kylin-international` | 共享 UI 组件、样式一致性、`@qmai/vue-kylin` 行为或组件库发布流程 |
 | `international-design-technical-spec` | 后台视觉规范、页面骨架、设计 token 或设计对照预览 |
 | `shared-opms-release` | 普通国际仓库 `pre` 发布、状态检查或 OPMS 排障 |
-| `PROJECT_ONBOARDING` | 新人或 AI 接入说明、目录结构分工、样式入口、组件库与依赖关系 |
+| [`PROJECT_ONBOARDING`]({{< relref "/agent-center/project-onboarding/" >}}) | 新人或 AI 接入说明、目录结构分工、样式入口、组件库与依赖关系 |
 | `PLAYBOOK_SYNC` | playbook 与真实仓库最新默认分支重新对齐 |
 
 ## 仓库角色别名

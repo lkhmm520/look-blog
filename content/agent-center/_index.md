@@ -25,6 +25,7 @@ cascade:
 | [项目自动识别]({{< relref "/agent-center/project-detection/" >}}) | 判断当前项目是否应启用 Qmai / Qimai 规则 |
 | [工作流路由]({{< relref "/agent-center/workflow-router/" >}}) | 根据任务类型选择最小匹配 playbook |
 | [Playbook 索引]({{< relref "/agent-center/playbook-index/" >}}) | 查看所有 playbook 的职责边界和仓库角色 |
+| [项目结构与组件库接入速查]({{< relref "/agent-center/project-onboarding/" >}}) | 查看仓库分工、目录结构、接口分工、样式入口和组件库依赖 |
 | [国际化交付工作流]({{< relref "/agent-center/international-delivery-workflow/" >}}) | 从需求分析到实现、验证、交付的完整闭环 |
 | [后台 UI 设计技术规范]({{< relref "/agent-center/international-design-technical-spec/" >}}) | 页面骨架、设计 token、组件规则、UI 样式模板 |
 
@@ -34,8 +35,9 @@ cascade:
 
 1. 先看 [全局约束]({{< relref "/agent-center/global-constraints/" >}})，理解 AI 做事的底线。
 2. 再看 [项目自动识别]({{< relref "/agent-center/project-detection/" >}}) 和 [工作流路由]({{< relref "/agent-center/workflow-router/" >}})，理解 AI 如何进入正确上下文。
-3. 需要做需求交付时，进入 [国际化交付工作流]({{< relref "/agent-center/international-delivery-workflow/" >}})。
-4. 涉及页面、组件、样式、主题时，进入 [后台 UI 设计技术规范]({{< relref "/agent-center/international-design-technical-spec/" >}})。
+3. 想看项目目录结构、样式入口或组件库关系时，进入 [项目结构与组件库接入速查]({{< relref "/agent-center/project-onboarding/" >}})。
+4. 需要做需求交付时，进入 [国际化交付工作流]({{< relref "/agent-center/international-delivery-workflow/" >}})。
+5. 涉及页面、组件、样式、主题时，进入 [后台 UI 设计技术规范]({{< relref "/agent-center/international-design-technical-spec/" >}})。
 
 ## 与源仓库的关系
 
