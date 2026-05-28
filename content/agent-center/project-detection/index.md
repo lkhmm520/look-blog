@@ -7,6 +7,8 @@ draft: false
 weight: 30
 tags: ["Qmai Agent Center", "项目识别", "前端工程"]
 categories: ["AI 工程化"]
+series: ["Qmai Agent Center"]
+series_order: 3
 ---
 
 本页整理自 `agent-center/rules/project-detection.mdc`。它的核心原则是：不要假设所有子应用都在同一个父目录，也不要要求使用者维护仓库路径映射。

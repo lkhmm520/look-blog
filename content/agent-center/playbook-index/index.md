@@ -7,6 +7,8 @@ draft: false
 weight: 50
 tags: ["Qmai Agent Center", "Playbook", "前端工程"]
 categories: ["AI 工程化"]
+series: ["Qmai Agent Center"]
+series_order: 5
 ---
 
 本页整理自 `agent-center/playbooks/INDEX.md`。它负责说明有哪些 playbook、分别解决什么问题，以及对应文件位于哪里。

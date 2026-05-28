@@ -13,21 +13,24 @@ cascade:
   showTableOfContents: true
 ---
 
-`Qmai Agent Center` 的规范库，用来把规则中心中的核心 Markdown 文档整理成可直接打开、可分享、可检索的博客页面。
+`Qmai Agent Center` 规范库是团队 AI 前端工作流的文档入口。
 
-这些页面不是替代 `agent-center` 源仓库，而是面向团队阅读和传达的文档入口：介绍 AI 在企迈国际化前端项目中应该如何识别项目、选择工作流、遵守全局约束，以及如何按统一的后台 UI 规范落地页面。
+这里不按源码目录堆文档，而是按“先理解规则、再识别项目、再选择工作流、最后落到交付和 UI”的顺序组织。想从头阅读可以按下面顺序走；想快速查某个问题，也可以直接跳到对应文档。
 
-## 规范入口
+专题页：[Qmai Agent Center 专题]({{< relref "/series/qmai-agent-center/" >}})
 
-| 文档 | 适用场景 |
+## 先看哪里
+
+| 我想了解 | 先看 |
 | --- | --- |
-| [全局约束]({{< relref "/agent-center/global-constraints/" >}}) | 修改流程、最小闭环、安全、Git、Feishu 和接口约束 |
-| [项目自动识别]({{< relref "/agent-center/project-detection/" >}}) | 判断当前项目是否应启用 Qmai / Qimai 规则 |
-| [工作流路由]({{< relref "/agent-center/workflow-router/" >}}) | 根据任务类型选择最小匹配 playbook |
-| [Playbook 索引]({{< relref "/agent-center/playbook-index/" >}}) | 查看所有 playbook 的职责边界和仓库角色 |
-| [项目结构与组件库接入速查]({{< relref "/agent-center/project-onboarding/" >}}) | 查看仓库分工、目录结构、接口分工、样式入口和组件库依赖 |
-| [国际化交付工作流]({{< relref "/agent-center/international-delivery-workflow/" >}}) | 从需求分析到实现、验证、交付的完整闭环 |
-| [后台 UI 设计技术规范]({{< relref "/agent-center/international-design-technical-spec/" >}}) | 页面骨架、设计 token、组件规则、UI 样式模板 |
+| 这套东西是什么 | [Qmai Agent Center：前端 AI 工作流规则中心]({{< relref "/ai/qmai-agent-center-introduction/" >}}) |
+| AI 做事有哪些底线 | [Qmai 全局约束]({{< relref "/agent-center/global-constraints/" >}}) |
+| 当前仓库是不是 Qmai 项目 | [Qmai 项目自动识别]({{< relref "/agent-center/project-detection/" >}}) |
+| 一个任务应该进入哪个 playbook | [Qmai 工作流路由]({{< relref "/agent-center/workflow-router/" >}}) |
+| 项目目录结构、样式入口、组件库在哪里 | [Qmai 国际前端项目接入速查]({{< relref "/agent-center/project-onboarding/" >}}) |
+| 有哪些 playbook，各自管什么 | [Qmai Playbook 索引]({{< relref "/agent-center/playbook-index/" >}}) |
+| 需求从分析到交付怎么跑 | [Qmai 国际化交付工作流]({{< relref "/agent-center/international-delivery-workflow/" >}}) |
+| 后台页面、组件、主题应该长什么样 | [Qmai International 后台设计技术规范]({{< relref "/agent-center/international-design-technical-spec/" >}}) |
 
 ## 阅读顺序
 
@@ -38,6 +41,15 @@ cascade:
 3. 想看项目目录结构、样式入口或组件库关系时，进入 [项目结构与组件库接入速查]({{< relref "/agent-center/project-onboarding/" >}})。
 4. 需要做需求交付时，进入 [国际化交付工作流]({{< relref "/agent-center/international-delivery-workflow/" >}})。
 5. 涉及页面、组件、样式、主题时，进入 [后台 UI 设计技术规范]({{< relref "/agent-center/international-design-technical-spec/" >}})。
+
+## 文档分组
+
+| 分组 | 文档 |
+| --- | --- |
+| 基础规则 | [全局约束]({{< relref "/agent-center/global-constraints/" >}})、[项目自动识别]({{< relref "/agent-center/project-detection/" >}})、[工作流路由]({{< relref "/agent-center/workflow-router/" >}}) |
+| 项目接入 | [项目接入速查]({{< relref "/agent-center/project-onboarding/" >}})、[Playbook 索引]({{< relref "/agent-center/playbook-index/" >}}) |
+| 执行交付 | [国际化交付工作流]({{< relref "/agent-center/international-delivery-workflow/" >}}) |
+| UI 规范 | [后台设计技术规范]({{< relref "/agent-center/international-design-technical-spec/" >}}) |
 
 ## 与源仓库的关系
 

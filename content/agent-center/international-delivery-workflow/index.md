@@ -7,6 +7,8 @@ draft: false
 weight: 60
 tags: ["Qmai Agent Center", "交付流程", "前端工程"]
 categories: ["AI 工程化"]
+series: ["Qmai Agent Center"]
+series_order: 7
 ---
 
 本页整理自 `agent-center/playbooks/international-delivery-workflow/PLAYBOOK.md`。它适用于从需求分析、实现、验证到交付说明的完整链路。

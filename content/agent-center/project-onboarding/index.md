@@ -7,6 +7,8 @@ draft: false
 weight: 55
 tags: ["Qmai Agent Center", "项目结构", "组件库", "前端工程"]
 categories: ["AI 工程化", "前端工程"]
+series: ["Qmai Agent Center"]
+series_order: 6
 ---
 
 本页整理自 `agent-center/playbooks/PROJECT_ONBOARDING.md`。它面向需要快速理解公司国际前端项目的人和 AI，回答三个最常见的接入问题：

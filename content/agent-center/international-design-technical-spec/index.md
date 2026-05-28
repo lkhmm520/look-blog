@@ -7,6 +7,8 @@ draft: false
 weight: 70
 tags: ["Qmai Agent Center", "UI 规范", "Design System", "前端工程"]
 categories: ["AI 工程化", "前端工程"]
+series: ["Qmai Agent Center"]
+series_order: 8
 ---
 
 本页整理自 `agent-center/playbooks/international-design-technical-spec/PLAYBOOK.md`，并在文档中直接加入可视化模板，方便团队成员快速理解后台页面、组件和主题应该长什么样。

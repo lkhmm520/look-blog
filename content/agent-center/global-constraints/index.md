@@ -7,6 +7,8 @@ draft: false
 weight: 20
 tags: ["Qmai Agent Center", "AI Coding", "工作流规范"]
 categories: ["AI 工程化"]
+series: ["Qmai Agent Center"]
+series_order: 2
 ---
 
 本页整理自 `agent-center/rules/global-constraints.mdc`，是 `Qmai Agent Center` 的全局约束源。它定义 AI 在企迈国际化前端项目中做分析、改代码、验证、交付和沟通时必须遵守的底线。

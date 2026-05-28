@@ -7,6 +7,8 @@ draft: false
 weight: 40
 tags: ["Qmai Agent Center", "Playbook", "工作流路由"]
 categories: ["AI 工程化"]
+series: ["Qmai Agent Center"]
+series_order: 4
 ---
 
 本页整理自 `agent-center/rules/workflow-router.mdc`。它是 Qmai Agent Center 的唯一权威路由源，用来决定当前任务应该进入哪个最小 playbook。
