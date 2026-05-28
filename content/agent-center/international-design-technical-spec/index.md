@@ -100,8 +100,11 @@ Qmai 国际后台是面向连锁餐饮总部、区域运营、门店管理、实
   --qmai-info: #2e90fa;
   --qmai-warning: #f79009;
   --qmai-danger: #d92d20;
+  width: 100%;
+  max-width: none;
   margin: 24px 0;
   padding: 24px;
+  container-type: inline-size;
   border: 1px solid var(--qmai-line);
   border-radius: 18px;
   background: #f6f8fa;
@@ -217,6 +220,7 @@ Qmai 国际后台是面向连锁餐饮总部、区域运营、门店管理、实
 .qmai-main {
   display: grid;
   gap: 16px;
+  min-width: 0;
   padding: 18px;
 }
 .qmai-page-head {
@@ -243,6 +247,7 @@ Qmai 国际后台是面向连锁餐饮总部、区域运营、门店管理、实
   line-height: 1.6;
 }
 .qmai-panel {
+  min-width: 0;
   border: 1px solid var(--qmai-line);
   border-radius: 12px;
   background: #fff;
@@ -429,16 +434,20 @@ Qmai 国际后台是面向连锁餐饮总部、区域运营、门店管理、实
   border-top: 1px solid var(--qmai-line);
   background: #fff;
 }
-@media (max-width: 880px) {
-  .qmai-spec-preview {
-    padding: 14px;
-  }
-  .qmai-preview-body,
-  .qmai-layout-grid {
+@container (max-width: 920px) {
+  .qmai-preview-body {
     grid-template-columns: 1fr;
   }
   .qmai-side {
     display: none;
+  }
+}
+@media (max-width: 880px) {
+  .qmai-spec-preview {
+    padding: 14px;
+  }
+  .qmai-layout-grid {
+    grid-template-columns: 1fr;
   }
   .qmai-page-head,
   .qmai-preview-topbar {
