@@ -50,7 +50,7 @@ feature/YYYYMMDD-项目需求文档id
 
 ### 1. 读取需求与上下文
 
-- 如果用户提供 Feishu 链接，先读取链接内容。
+- 如果用户提供 Feishu 链接，先读取链接内容；读取顺序为 `MCP -> CLI -> Codex Chrome 插件`。
 - 如果只有需求文案，先提取目标页面、目标仓库、接口、角色、状态、异常路径。
 - 如果目标仓库不明确，先进入 `international-demand-parser`。
 
