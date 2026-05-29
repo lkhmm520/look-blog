@@ -46,6 +46,8 @@ series_order: 4
 | `pre` 发布、发布状态检查、OPMS 排障 | `shared-opms-release` |
 | 刷新 playbook 与真实仓库历史同步 | `PLAYBOOK_SYNC.md` |
 
+飞书链接的内容读取链路不在路由规则中重复维护；读取顺序以 [Qmai 全局约束]({{< relref "/agent-center/global-constraints/" >}}) 的 “Feishu 与接口文档” 为准。工作流路由只负责在内容读取完成后选择最小匹配 playbook。
+
 ## 路径占位
 
 playbook 中的路径应使用统一占位，而不是写死某个人的本机路径。
